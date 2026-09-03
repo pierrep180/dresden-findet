@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dresden findet. Jede Woche fünf Suchen aus Dresden.</title>
+<meta name="description" content="Dresden findet. ist eine Instagram-Seite: Jeden Donnerstag um 17 Uhr fünf Suchen aus Dresden, jede mit Nummer. Person aus der Bahn, Trainingspartner, verlorener Schlüssel, Tickets, Anschluss. Suchen per DM an @dresden.findet.">
+<meta property="og:title" content="Dresden findet.">
+<meta property="og:description" content="Jede Woche fünf Suchen aus Dresden. Jede mit Nummer. Du suchst wen oder was? Schreib uns per DM.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="og.png">
+<meta property="og:locale" content="de_DE">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23FF5A36'/%3E%3Ctext x='32' y='45' text-anchor='middle' font-family='Arial Black,Arial' font-weight='900' font-size='38' fill='%231E1B18'%3Ef.%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,500..800&family=Instrument+Sans:wght@400;500;600;700&display=swap">
+<style>
+  :root { --signal: #FF5A36; --sand: #F4EFE6; --tinte: #1E1B18; --elbe: #CFE4F5; --sand2: #EDE6DA; --meta: #6F675E; }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body { margin: 0; background: var(--sand); color: var(--tinte); font-family: "Instrument Sans", "Helvetica Neue", Arial, sans-serif; font-size: 18px; line-height: 1.5; -webkit-font-smoothing: antialiased; }
+  a { color: inherit; }
+  .wrap { max-width: 1040px; margin: 0 auto; padding: 0 24px; }
+  header { padding: 22px 0; }
+  header .wrap { display: flex; justify-content: space-between; align-items: baseline; gap: 16px; }
+  .wortmarke { font-family: "Bricolage Grotesque", "Helvetica Neue", Arial, sans-serif; font-weight: 800; font-size: 26px; letter-spacing: -0.01em; text-decoration: none; }
+  header a.handle { font-weight: 600; text-decoration: none; border-bottom: 2px solid var(--tinte); font-size: 16px; }
+  .hero { background: var(--signal); padding: 72px 0 64px; }
+  .label { font-size: 15px; font-weight: 600; letter-spacing: .06em; text-transform: uppercase; }
+  h1 { font-family: "Bricolage Grotesque", "Helvetica Neue", Arial, sans-serif; font-weight: 800; font-size: clamp(44px, 8vw, 96px); line-height: .95; letter-spacing: -0.02em; margin: 16px 0 28px; max-width: 12ch; font-variation-settings: "opsz" 96, "wdth" 90; text-wrap: balance; }
+  .hero p { max-width: 42ch; font-size: 20px; font-weight: 500; margin: 0 0 32px; }
+  .knopf { display: inline-block; background: var(--tinte); color: var(--sand); text-decoration: none; font-weight: 700; padding: 16px 26px; border-radius: 999px; font-size: 18px; }
+  .knopf:hover, .knopf:focus-visible { background: #000; outline: none; }
+  .hero .klein { margin-top: 22px; font-size: 16px; font-weight: 500; opacity: .85; }
+  section { padding: 72px 0 8px; }
+  h2 { font-family: "Bricolage Grotesque", "Helvetica Neue", Arial, sans-serif; font-weight: 800; font-size: clamp(34px, 5vw, 56px); line-height: 1; letter-spacing: -0.02em; margin: 0 0 28px; font-variation-settings: "opsz" 96, "wdth" 92; }
+  p { max-width: 64ch; }
+  .zahlen { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px; margin: 36px 0 8px; }
+  .zahl { background: var(--elbe); border-radius: 22px; border-bottom-left-radius: 6px; padding: 26px 26px 22px; }
+  .zahl b { display: block; font-family: "Bricolage Grotesque", "Helvetica Neue", Arial, sans-serif; font-weight: 800; font-size: 60px; line-height: .9; letter-spacing: -0.03em; color: var(--signal); font-variant-numeric: tabular-nums; font-variation-settings: "opsz" 96, "wdth" 80; }
+  .zahl span { display: block; margin-top: 12px; font-weight: 500; font-size: 16px; }
+  .zahl small { display: block; margin-top: 8px; font-size: 13px; color: var(--meta); }
+  .schritte { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 20px; }
+  .schritt { background: #fff; border-radius: 22px; padding: 26px 26px 24px; }
+  .schritt b { display: block; font-family: "Bricolage Grotesque", "Helvetica Neue", Arial, sans-serif; font-weight: 800; font-size: 96px; line-height: .85; letter-spacing: -0.04em; color: var(--signal); font-variation-settings: "opsz" 96, "wdth" 78; }
+  .schritt h3 { font-size: 22px; margin: 18px 0 8px; line-height: 1.2; }
+  .schritt p { margin: 0; font-size: 17px; }
+  .sorten { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 14px; }
+  .sorte { background: var(--sand2); border-radius: 18px; padding: 20px 22px; }
+  .pill { display: inline-block; background: var(--signal); font-weight: 700; font-size: 14px; padding: 6px 14px; border-radius: 999px; }
+  .sorte p { margin: 12px 0 0; font-size: 17px; }
+  .sorte p em { font-style: normal; color: var(--meta); }
+  .regeln { list-style: none; padding: 0; margin: 0; display: grid; gap: 12px; max-width: 64ch; }
+  .regeln li { position: relative; padding-left: 34px; font-size: 18px; }
+  .regeln li::before { content: ""; position: absolute; left: 0; top: 7px; width: 16px; height: 16px; border-radius: 4px; background: var(--signal); }
+  .faq { max-width: 64ch; }
+  .faq details { border-top: 2px solid var(--tinte); padding: 14px 0; }
+  .faq details:last-child { border-bottom: 2px solid var(--tinte); }
+  .faq summary { cursor: pointer; font-weight: 700; font-size: 18px; list-style: none; display: flex; justify-content: space-between; gap: 16px; }
+  .faq summary::-webkit-details-marker { display: none; }
+  .faq summary::after { content: "+"; font-family: "Bricolage Grotesque", Arial, sans-serif; font-weight: 800; font-size: 24px; line-height: 1; color: var(--signal); }
+  .faq details[open] summary::after { content: "–"; }
+  .faq details p { margin: 10px 0 0; font-size: 17px; }
+  .cta { background: var(--elbe); border-radius: 26px; border-bottom-left-radius: 8px; padding: 36px 32px; margin: 72px 0 0; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 20px; }
+  .cta h2 { margin: 0; font-size: clamp(28px, 4vw, 40px); }
+  footer { padding: 56px 0 40px; font-size: 14px; color: var(--meta); }
+  footer .wrap { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px 24px; }
+  footer a { color: var(--meta); text-decoration: none; }
+  footer a:hover, footer a:focus-visible { color: var(--tinte); }
+  footer .leise { font-size: 12px; opacity: .7; }
+  @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <a class="wortmarke" href="./">Dresden findet.</a>
+    <a class="handle" href="https://www.instagram.com/dresden.findet/" rel="noopener">@dresden.findet</a>
+  </div>
+</header>
+
+<div class="hero">
+  <div class="wrap">
+    <div class="label">Instagram-Seite für Dresden</div>
+    <h1>Jede Woche fünf Suchen aus Dresden. Jede mit Nummer.</h1>
+    <p>Du suchst wen oder was? Schreib uns per DM. Du weißt was? Kommentier die Nummer. Ab 18, anonym möglich.</p>
+    <a class="knopf" href="https://www.instagram.com/dresden.findet/" rel="noopener">Zu @dresden.findet</a>
+    <div class="klein">Jeden Donnerstag, 17 Uhr. Erste Ausgabe am 10. September 2026.</div>
+  </div>
+</div>
+
+<section id="idee">
+  <div class="wrap">
+    <h2>Die Idee</h2>
+    <p>Dresden verpasst sich. Die Person aus der Linie 11, mit der du zweimal Blickkontakt hattest. Der Trainingspartner für den Alaunpark, den es irgendwo gibt. Der Schlüsselbund vom Elbufer, den jemand aufgehoben hat. Zwei Tickets für Samstag. Leute zum Rausgehen, weil du neu in der Stadt bist.</p>
+    <p>Dresden findet. sammelt solche Suchen per DM und veröffentlicht jede Woche fünf davon als Karussell auf Instagram. Jede Suche bekommt eine Nummer. Wer etwas weiß oder sich angesprochen fühlt, kommentiert die Nummer. Wer sucht, liest mit und schreibt selbst, wem er will.</p>
+    <div class="zahlen">
+      <div class="zahl"><b>29.000</b><span>Menschen ziehen jedes Jahr nach Dresden.</span><small>Stadt Dresden, Einwohnerzahlen 2025</small></div>
+      <div class="zahl"><b>6.200</b><span>Erstsemester fangen im Oktober an der TU an.</span><small>TU Dresden, 2025</small></div>
+      <div class="zahl"><b>14,1 %</b><span>der 18- bis 29-Jährigen fühlen sich stark einsam.</span><small>Einsamkeitsbarometer 2024</small></div>
+    </div>
+  </div>
+</section>
+
+<section id="so-laeufts">
+  <div class="wrap">
+    <h2>So läuft's</h2>
+    <div class="schritte">
+      <div class="schritt"><b>1</b><h3>Du schreibst uns per DM, wen oder was du suchst.</h3><p>Zwei Sätze reichen. Wir fragen kurz zurück: anonym oder mit Handle, über 18, dürfen wir das so posten. Dein Handle bleibt bei uns.</p></div>
+      <div class="schritt"><b>2</b><h3>Donnerstag 17 Uhr kommt deine Suche mit einer Nummer in die Ausgabe.</h3><p>Fünf Suchen pro Woche, jede mit eigener Nummer. Dein Text bleibt dein Text. Eingangsschluss ist Mittwoch, 20 Uhr.</p></div>
+      <div class="schritt"><b>3</b><h3>Wer was weiß, kommentiert die Nummer.</h3><p>Nur die Nummer, sonst nichts. Du liest die Kommentare unter der Ausgabe und schreibst selbst, wem du willst. Wir schreiben niemandem hinterher.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="sorten">
+  <div class="wrap">
+    <h2>Sechs Sorten Suche</h2>
+    <div class="sorten">
+      <div class="sorte"><span class="pill">Gesehen</span><p><em>„Du, Linie 11 Richtung Bühlau, Dienstag gegen 18 Uhr, grüne Jacke, wir haben zweimal gegrinst."</em></p></div>
+      <div class="sorte"><span class="pill">Anschluss</span><p><em>„Neu in Dresden, 24, suche Leute für Kneipe, Elbe, Wandern."</em></p></div>
+      <div class="sorte"><span class="pill">Sport &amp; Hobby</span><p><em>„Wer geht regelmäßig in den Calisthenics-Park im Alaunpark?"</em></p></div>
+      <div class="sorte"><span class="pill">Verloren</span><p><em>„Schlüsselbund mit blauem Karabiner, Sonntag am Elbufer Höhe Waldschlößchen."</em></p></div>
+      <div class="sorte"><span class="pill">Tickets</span><p><em>„Suche 2 Karten für Samstag, Kraftwerk Mitte."</em></p></div>
+      <div class="sorte"><span class="pill">Gesucht</span><p><em>„Wer leiht mir ein Rennrad in 56 für ein Wochenende?"</em></p></div>
+    </div>
+  </div>
+</section>
+
+<section id="regeln">
+  <div class="wrap">
+    <h2>Regeln</h2>
+    <ul class="regeln">
+      <li>Ab 18.</li>
+      <li>Keine Fotos von anderen Personen. Auch nicht verpixelt.</li>
+      <li>Keine Namen, Adressen, Arbeitgeber, Kennzeichen oder Telefonnummern von anderen.</li>
+      <li>Keine Vorwürfe. Wir sind keine Fahndung.</li>
+      <li>Keine sexuellen Inhalte.</li>
+      <li>Keine Ausgrenzung, keine Diskriminierung, keine menschenfeindlichen Aussagen. Egal gegen wen.</li>
+      <li>Keine Verkaufsanzeigen und keine Werbung. Suchen ja, Anbieten nein.</li>
+      <li>Nur die gemeinte Person meldet sich selbst. Kommentare, die andere markieren, werden gelöscht.</li>
+      <li>Jede Suche wird auf Wunsch gelöscht, ohne Nachfrage.</li>
+      <li>Kontakt läuft direkt: Wer sucht, liest die Kommentare und schreibt selbst. Wir nennen nie Handles in Kommentaren.</li>
+    </ul>
+  </div>
+</section>
+
+<section id="fragen">
+  <div class="wrap">
+    <h2>Fragen</h2>
+    <div class="faq">
+      <details><summary>Was kostet das?</summary><p>Nichts.</p></details>
+      <details><summary>Wer sieht meinen Namen?</summary><p>Niemand, wenn du anonym willst. Dann steht nur der Text in der Ausgabe. Wer kommentiert, erfährt erst von dir, wer du bist, wenn du ihr oder ihm schreibst.</p></details>
+      <details><summary>Jemand hat meine Nummer kommentiert. Was jetzt?</summary><p>Du schreibst der Person selbst. Die Kommentare stehen unter der Ausgabe, du entscheidest, wem du antwortest. Wir schreiben niemandem hinterher und schicken keine Erinnerung.</p></details>
+      <details><summary>Ich erkenne mich in einer Suche, will aber nicht öffentlich kommentieren.</summary><p>Schreib uns per DM mit der Nummer. Wir geben dein Handle einmal an die suchende Person weiter, sonst an niemanden.</p></details>
+      <details><summary>Wie lange dauert es?</summary><p>Bis Donnerstag 17 Uhr. Was bis Mittwoch 20 Uhr reinkommt, ist in der Ausgabe der Woche. Bei mehr als fünf Suchen entscheidet die Reihenfolge des Eingangs; der Rest rutscht in die nächste Woche.</p></details>
+      <details><summary>Kann ich mehrere Suchen schicken?</summary><p>Ja. Jede bekommt eine eigene Nummer.</p></details>
+      <details><summary>Ich erkenne mich in einer Suche und will das nicht.</summary><p>Schreib uns, die Suche ist am selben Tag weg. Ohne Nachfrage.</p></details>
+      <details><summary>Jemand hat mich in einem Kommentar markiert.</summary><p>Wir löschen den Kommentar, sobald wir ihn sehen. Meld dich per DM, dann geht es schneller.</p></details>
+      <details><summary>Wer steckt dahinter?</summary><p>Ein Dresdner, der findet, dass sich hier zu viele Leute verpassen. Keine Firma, keine Agentur, kein Verkauf.</p></details>
+    </div>
+
+    <div class="cta">
+      <h2>Du suchst wen oder was?</h2>
+      <a class="knopf" href="https://www.instagram.com/dresden.findet/" rel="noopener">Schreib uns per DM</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div>Dresden findet. ist ein privates Projekt aus Dresden. Keine Cookies, kein Tracking, keine Werbung.</div>
+    <div class="leise"><a href="https://www.instagram.com/dresden.findet/" rel="noopener">Instagram</a> · <a href="impressum.html">Impressum</a></div>
+  </div>
+</footer>
+
+</body>
+</html>
