@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Dresden findet. Jede Woche fünf Suchen aus Dresden.</title>
-<meta name="description" content="Dresden findet. ist eine Instagram-Seite: Jeden Donnerstag um 17 Uhr fünf Suchen aus Dresden, jede mit Nummer. Person aus der Bahn, Trainingspartner, verlorener Schlüssel, Tickets, Anschluss. Suchen per DM an @dresden.findet.">
+<meta name="description" content="Dresden findet. ist eine Instagram-Seite: Jeden Donnerstag um 17 Uhr fünf Suchen aus Dresden, jede mit Nummer. Person aus der Bahn wiederfinden, Anschluss finden, Trainingspartner, verlorener Schlüssel, Tickets, etwas leihen. Suchen per DM an @dresden.findet.">
 <meta property="og:title" content="Dresden findet.">
 <meta property="og:description" content="Jede Woche fünf Suchen aus Dresden. Jede mit Nummer. Du suchst wen oder was? Schreib uns per DM.">
 <meta property="og:type" content="website">
@@ -45,10 +45,15 @@
   .schritt b { display: block; font-family: "Bricolage Grotesque", "Helvetica Neue", Arial, sans-serif; font-weight: 800; font-size: 96px; line-height: .85; letter-spacing: -0.04em; color: var(--signal); font-variation-settings: "opsz" 96, "wdth" 78; }
   .schritt h3 { font-size: 22px; margin: 18px 0 8px; line-height: 1.2; }
   .schritt p { margin: 0; font-size: 17px; }
+  .usps { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 14px; }
+  .usp { background: #fff; border-radius: 18px; padding: 22px 24px 20px; }
+  .usp h3 { margin: 0 0 8px; font-size: 20px; line-height: 1.2; text-wrap: balance; }
+  .usp p { margin: 0; font-size: 16px; }
   .sorten { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 14px; }
   .sorte { background: var(--sand2); border-radius: 18px; padding: 20px 22px; }
   .pill { display: inline-block; background: var(--signal); font-weight: 700; font-size: 14px; padding: 6px 14px; border-radius: 999px; }
-  .sorte p { margin: 12px 0 0; font-size: 17px; }
+  .sorte p { margin: 12px 0 0; font-size: 16px; }
+  .sorte p.was { font-weight: 500; }
   .sorte p em { font-style: normal; color: var(--meta); }
   .regeln { list-style: none; padding: 0; margin: 0; display: grid; gap: 12px; max-width: 64ch; }
   .regeln li { position: relative; padding-left: 34px; font-size: 18px; }
@@ -93,12 +98,13 @@
 <section id="idee">
   <div class="wrap">
     <h2>Die Idee</h2>
-    <p>Dresden verpasst sich. Die Person aus der Linie 11, mit der du zweimal Blickkontakt hattest. Der Trainingspartner für den Alaunpark, den es irgendwo gibt. Der Schlüsselbund vom Elbufer, den jemand aufgehoben hat. Zwei Tickets für Samstag. Leute zum Rausgehen, weil du neu in der Stadt bist.</p>
+    <p>Dresden verpasst sich. Die Person aus der Linie 11, mit der du dreimal Blickkontakt hattest, bis am Waldschlößchen einer ausgestiegen ist. Die Kollegen, die nett sind und um 17 Uhr weg. Der Trainingspartner für die Stange hinterm SP1, den es irgendwo gibt. Der Schlüsselbund vom Elbufer, den jemand aufgehoben hat und der nie im Fundbüro ankommt. Die Karte für Samstag, die übrig ist, weil ein Freund krank wurde.</p>
     <p>Dresden findet. sammelt solche Suchen per DM und veröffentlicht jede Woche fünf davon als Karussell auf Instagram. Jede Suche bekommt eine Nummer. Wer etwas weiß oder sich angesprochen fühlt, kommentiert die Nummer. Wer sucht, liest mit und schreibt selbst, wem er will.</p>
     <div class="zahlen">
-      <div class="zahl"><b>29.000</b><span>Menschen ziehen jedes Jahr nach Dresden.</span><small>Stadt Dresden, Einwohnerzahlen 2025</small></div>
-      <div class="zahl"><b>6.200</b><span>Erstsemester fangen im Oktober an der TU an.</span><small>TU Dresden, 2025</small></div>
-      <div class="zahl"><b>14,1 %</b><span>der 18- bis 29-Jährigen fühlen sich stark einsam.</span><small>Einsamkeitsbarometer 2024</small></div>
+      <div class="zahl"><b>29.000</b><span>Menschen ziehen jedes Jahr nach Dresden. Am ersten Abend kennen die meisten genau eine Person: den Vermieter.</span><small>Stadt Dresden, Bevölkerung 2025</small></div>
+      <div class="zahl"><b>21 %</b><span>der 21- bis 30-Jährigen fühlen sich stark einsam, 42 % einsam. In der Linie 11 ist das jeder fünfte Sitzplatz.</span><small>Bundesinstitut für Bevölkerungsforschung, Juni 2026</small></div>
+      <div class="zahl"><b>50 Std.</b><span>dauert es, bis aus einem Fremden ein Bekannter wird. Die erste Minute ist die schwerste: jemanden fragen.</span><small>Jeffrey Hall, University of Kansas, 2018</small></div>
+      <div class="zahl"><b>12.000</b><span>Fundsachen landen jedes Jahr im Dresdner Fundbüro. Was jemand einsteckt, kommt dort nicht an.</span><small>Fundbüro Dresden, 2026</small></div>
     </div>
   </div>
 </section>
@@ -114,16 +120,31 @@
   </div>
 </section>
 
+<section id="anders">
+  <div class="wrap">
+    <h2>Was hier anders ist</h2>
+    <div class="usps">
+      <div class="usp"><h3>Eine Nummer statt eines Profils.</h3><p>Jede Suche hat eine Nummer, die es nur einmal gibt. Wer antwortet, tippt sie in die Kommentare. Kein Text, keine Vorstellung, kein Foto.</p></div>
+      <div class="usp"><h3>Der Kontakt läuft direkt.</h3><p>Wer sucht, liest die Kommentare und schreibt selbst, wem er will. Wir stehen nicht dazwischen und schreiben niemandem hinterher.</p></div>
+      <div class="usp"><h3>Donnerstag, 17 Uhr. Immer.</h3><p>Fünf Suchen pro Woche, ein fester Termin. Wer sucht, weiß, wann seine Suche erscheint. Wer liest, weiß, wann es sich lohnt.</p></div>
+      <div class="usp"><h3>Anonym, wenn du willst.</h3><p>Die Suche erscheint ohne deinen Namen. Wer kommentiert, erfährt erst von dir, wer du bist.</p></div>
+      <div class="usp"><h3>Keine Fotos, keine Fahndung.</h3><p>Nie ein Foto von anderen, nie ein Name, nie ein Vorwurf. Nur die gemeinte Person meldet sich selbst; wer andere markiert, wird gelöscht.</p></div>
+      <div class="usp"><h3>Ganz Dresden, ein Ort.</h3><p>Linie 11 und Kaufpark Nickern in derselben Ausgabe. Person gesehen, Anschluss, Sport, Verloren, Tickets, Leihen: eine Adresse statt fünf Gruppen.</p></div>
+    </div>
+  </div>
+</section>
+
 <section id="sorten">
   <div class="wrap">
-    <h2>Sechs Sorten Suche</h2>
+    <h2>Was du hier suchen kannst</h2>
+    <p>Jede Suche bekommt eine von sechs Kategorien, damit beim Lesen sofort klar ist, worum es geht. Zwei Sätze reichen: was, wo, wann.</p>
     <div class="sorten">
-      <div class="sorte"><span class="pill">Gesehen</span><p><em>„Du, Linie 11 Richtung Bühlau, Dienstag gegen 18 Uhr, grüne Jacke, wir haben zweimal gegrinst."</em></p></div>
-      <div class="sorte"><span class="pill">Anschluss</span><p><em>„Neu in Dresden, 24, suche Leute für Kneipe, Elbe, Wandern."</em></p></div>
-      <div class="sorte"><span class="pill">Sport &amp; Hobby</span><p><em>„Wer geht regelmäßig in den Calisthenics-Park im Alaunpark?"</em></p></div>
-      <div class="sorte"><span class="pill">Verloren</span><p><em>„Schlüsselbund mit blauem Karabiner, Sonntag am Elbufer Höhe Waldschlößchen."</em></p></div>
-      <div class="sorte"><span class="pill">Tickets</span><p><em>„Suche 2 Karten für Samstag, Kraftwerk Mitte."</em></p></div>
-      <div class="sorte"><span class="pill">Gesucht</span><p><em>„Wer leiht mir ein Rennrad in 56 für ein Wochenende?"</em></p></div>
+      <div class="sorte"><span class="pill">Gesehen</span><p class="was">Jemand ist dir aufgefallen und du hast nichts gesagt. Du beschreibst den Moment, nicht die Person: wo, wann, was passiert ist. Kein Name, kein Foto.</p><p><em>„Du, Linie 11 Richtung Bühlau, Dienstag gegen 18 Uhr, grüne Jacke, wir haben zweimal gegrinst. Am Waldschlößchen warst du raus."</em></p></div>
+      <div class="sorte"><span class="pill">Anschluss</span><p class="was">Du bist neu in Dresden oder deine Leute sind weggezogen. Du sagst, was du gern machst und wann du Zeit hast.</p><p><em>„Seit Juli in Dresden, 27, Löbtau. Die Kollegen sind nett, aber um 17 Uhr sind sie weg. Suche Leute für Kneipe, Elbe, ab und zu ein Konzert."</em></p></div>
+      <div class="sorte"><span class="pill">Sport &amp; Hobby</span><p class="was">Trainingspartner, Mitspieler, Bandmitglieder. Mit Ort, Level und Tag. „Irgendwann mal" bekommt keine Antwort.</p><p><em>„Wer trainiert morgens an der Calisthenics-Anlage hinterm SP1 am Straßburger Platz? Ich schaffe 3 Klimmzüge und will auf 10."</em></p></div>
+      <div class="sorte"><span class="pill">Verloren</span><p class="was">Etwas ist weg und das Fundbüro hat es nicht. Was, wo, wann, woran man es erkennt. Wer etwas gefunden hat, schreibt genauso.</p><p><em>„Schlüsselbund mit blauem Karabiner, Sonntag am Elbufer zwischen Waldschlößchenbrücke und Fährgarten."</em></p></div>
+      <div class="sorte"><span class="pill">Tickets</span><p class="was">Eine Karte übrig oder eine gesucht. Datum, Veranstaltung, Anzahl, zum Originalpreis. Kein Wucher, keine Händler.</p><p><em>„1 Karte für Dynamo am Samstag übrig, Block K, Originalpreis, mein Kumpel ist krank."</em></p></div>
+      <div class="sorte"><span class="pill">Gesucht</span><p class="was">Leihen, tauschen, mitfahren. Bohrmaschine, Transporter, Tandem-Partner. Suchen ja, Verkaufen nein.</p><p><em>„Wer leiht mir für einen Nachmittag eine Schlagbohrmaschine? Pieschen, ein Regal an eine Betonwand, Bier inklusive."</em></p></div>
     </div>
   </div>
 </section>
@@ -158,6 +179,8 @@
       <details><summary>Kann ich mehrere Suchen schicken?</summary><p>Ja. Jede bekommt eine eigene Nummer.</p></details>
       <details><summary>Ich erkenne mich in einer Suche und will das nicht.</summary><p>Schreib uns, die Suche ist am selben Tag weg. Ohne Nachfrage.</p></details>
       <details><summary>Jemand hat mich in einem Kommentar markiert.</summary><p>Wir löschen den Kommentar, sobald wir ihn sehen. Meld dich per DM, dann geht es schneller.</p></details>
+      <details><summary>Dafür gibt es doch Apps.</summary><p>Bumble braucht ein Profil mit Foto, Jodel vergisst nach 24 Stunden, Kleinanzeigen ist für Verkauf gebaut. Keins davon hat Dresden als Rahmen und einen Donnerstag als Termin. Hier reicht eine DM.</p></details>
+      <details><summary>Ist das nicht peinlich?</summary><p>Peinlich ist, dreimal zu grinsen und nie zu fragen. Eine Nummer ist nicht peinlich. Und anonym geht immer.</p></details>
       <details><summary>Wer steckt dahinter?</summary><p>Ein Dresdner, der findet, dass sich hier zu viele Leute verpassen. Keine Firma, keine Agentur, kein Verkauf.</p></details>
     </div>
 
